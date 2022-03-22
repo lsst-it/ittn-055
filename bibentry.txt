@@ -1,0 +1,9 @@
+% bibentry template for lsst.bib in https://github.com/lsst/lsst-texmf/blob/main/texmf/bibtex/bib/lsst.bib
+
+@DocuShare{ITTN-055,
+   author = { Cristian Silva },
+    title = {Disaster Recovery},
+     year = 2022,
+    month = Mar,
+   handle = {ITTN-055},
+      url = {https://ittn-055.lsst.io } }
