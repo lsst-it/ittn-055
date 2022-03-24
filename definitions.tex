@@ -1,0 +1,22 @@
+\section{Definitions}
+
+The following concepts will be utilized during the development of this document
+
+\subsection{Data Recovery}
+
+\begin{itemize}
+    \item \textbf{Recovery Point Objective}: Maximum temporal point in the history of the data, that can be lost. For example, user data that it is modified frequently could have a RPO of hours, but data less critical could have a RPO of days. 
+    This metric is about length of time, it doesn't specify amount of data or quality of the lost data.
+    
+    \item \textbf{Recovery Time Objective}: Maximum length of time that a system can be offline. 
+  \end{itemize}
+
+
+\subsection{Recovery Status}
+
+    \begin{itemize}
+        \item \textbf{Cold Recovery}: There's no spare available and a replacement must be obtained from the vendor. Considerable downtime or degradation of the service is expected until the system is fixed.
+        \item \textbf{Warm Recovery}: There is a spare onsite but it is not online. Maintenance window is required to recover the system.
+        \item \textbf{Hot Recovery}: There is a spare onsite and it is online. No downtime is required to recover the system, but there could be degradation of the service
+    \end{itemize}
+
