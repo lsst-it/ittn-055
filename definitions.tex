@@ -1,22 +1,27 @@
-\section{Definitions}
+\section{Scope}
 
-The following concepts will be utilized during the development of this document
+This disaster recovery document encompasses the recovery procedures and strategies applicable to the core infrastructure of the Vera C. Rubin Observatory. 
+The scope includes but is not limited to:
 
-\subsection{Data Recovery}
+\subsection{Hardware Systems}
 
-\begin{itemize}
-    \item \textbf{Recovery Point Objective}: Maximum temporal point in the history of the data, that can be lost. For example, user data that it is modified frequently could have a RPO of hours, but data less critical could have a RPO of days. 
-    This metric is about length of time, it doesn't specify amount of data or quality of the lost data.
-    
-    \item \textbf{Recovery Time Objective}: Maximum length of time that a system can be offline. 
-  \end{itemize}
+Servers hosting critical applications and databases.
+Network devices and communication infrastructure.
+End-user computing devices essential for business operations.
 
+\subsection{Software Systems}
 
-\subsection{Recovery Status}
+Operating systems and system software.
+Business applications crucial for day-to-day operations.
+Database management systems storing mission-critical data.
 
-    \begin{itemize}
-        \item \textbf{Cold Recovery}: There's no spare available and a replacement must be obtained from the vendor. Considerable downtime or degradation of the service is expected until the system is fixed.
-        \item \textbf{Warm Recovery}: There is a spare onsite but it is not online. Maintenance window is required to recover the system.
-        \item \textbf{Hot Recovery}: There is a spare onsite and it is online. No downtime is required to recover the system, but there could be degradation of the service
-    \end{itemize}
+\subsection{Data Management}
+
+Backup and recovery procedures for ensuring data integrity.
+Procedures for the restoration of databases and file systems.
+
+\subsection{Network Infrastructure}
+
+Communication networks connecting internal and external systems.
+Security appliances and protocols safeguarding network integrity.
 
